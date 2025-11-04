@@ -57,6 +57,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 
 <body>
+<header>
+    <h1>Minhas Funções</h1>
+    <nav>
+        <ul>
+            <li><a class="item" href="../php/encontrarMaiorValor.php">Encontrar o maior valor</a></li>
+            <li><a class="item" href="../index.php">Home</a></li>
+            <li><a class="item" href="../php/calculadoraAreaPerimetro.php">Calculadora de área e perímetro</a></li>
+        </ul>
+    </nav>
+</header>
+
+
     <div class="container">
         <h2>💰 Conversor de Moedas</h2>
         <p>Insira o seu valor em Reais (R$) e a cotação do Dólar (USD)</p>
@@ -71,7 +83,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo "</ul></div>";
         }
 
-        
+
         // Exibe resultado
         if (!empty($convertido) && $convertido > 0) {
             $reais_formatado = number_format($reais_filtrado, 2, ',', '.');

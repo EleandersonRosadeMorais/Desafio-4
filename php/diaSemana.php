@@ -55,54 +55,67 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>📅 Dia da Semana</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
-<div class="container">
-    <h2>📅 Dia da Semana</h2>
-    <p>Selecione um número de 1 a 7 para verificar o dia correspondente:</p>
+    <header>
+        <h1>Minhas Funções</h1>
+        <nav>
+            <ul>
+                <li><a class="item" href="../php/parImpar.php">Encontrar o maior valor</a></li>
+                <li><a class="item" href="../index.php">Home</a></li>
+                <li><a class="item" href="../php/operacoesMatematicas.php">Calculadora de área e perímetro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>📅 Dia da Semana</h2>
+        <p>Selecione um número de 1 a 7 para verificar o dia correspondente:</p>
 
-    <?php
-    // Exibe erros
-    if (!empty($erros)) {
-        echo "<div class='erro'><strong>⚠️ Erros encontrados:</strong><ul>";
-        foreach ($erros as $erro) {
-            echo "<li>$erro</li>";
+        <?php
+        // Exibe erros
+        if (!empty($erros)) {
+            echo "<div class='erro'><strong>⚠️ Erros encontrados:</strong><ul>";
+            foreach ($erros as $erro) {
+                echo "<li>$erro</li>";
+            }
+            echo "</ul></div>";
         }
-        echo "</ul></div>";
-    }
 
-    // Exibe resultado
-    if (!empty($resultado)) {
-        echo "<div class='resultado'>";
-        echo "<h2>📌 Resultado</h2>";
-        echo "{$resultado}<br>";
-        echo "</div>";
-    }
-    ?>
+        // Exibe resultado
+        if (!empty($resultado)) {
+            echo "<div class='resultado'>";
+            echo "<h2>📌 Resultado</h2>";
+            echo "{$resultado}<br>";
+            echo "</div>";
+        }
+        ?>
 
-    <!-- Formulário -->
-    <form method="post" action="">
-        <div class="form-group">
-            <label for="numero">📅 Dia da Semana</label>
-            <select id="numero" name="numero">
-                <option value="">Selecione</option>
-                <?php
-                for ($i = 1; $i <= 7; $i++) {
-                    $selected = ($numero == $i) ? 'selected' : '';
-                    echo "<option value='$i' $selected>$i</option>";
-                }
-                ?>
-            </select>
-        </div>
+        <!-- Formulário -->
+        <form method="post" action="">
+            <div class="form-group">
+                <label for="numero">📅 Dia da Semana</label>
+                <select id="numero" name="numero">
+                    <option value="">Selecione</option>
+                    <?php
+                    for ($i = 1; $i <= 7; $i++) {
+                        $selected = ($numero == $i) ? 'selected' : '';
+                        echo "<option value='$i' $selected>$i</option>";
+                    }
+                    ?>
+                </select>
+            </div>
 
-        <div class="form-group">
-            <input type="submit" value="🧮 Verificar">
-        </div>
-    </form>
-</div>
+            <div class="form-group">
+                <input type="submit" value="🧮 Verificar">
+            </div>
+        </form>
+    </div>
 </body>
+
 </html>

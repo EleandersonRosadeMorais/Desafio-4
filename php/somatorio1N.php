@@ -41,6 +41,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+                <header>
+        <h1>Minhas Funções</h1>
+        <nav>
+            <ul>
+                <li><a class="item" href="../php/fatorialNumero.php">Encontrar o maior valor</a></li>
+                <li><a class="item" href="../index.php">Home</a></li>
+                <li><a class="item" href="../php/sequenciaPares.php">Calculadora de área e perímetro</a></li>
+            </ul>
+        </nav>
+    </header>
 <div class="container">
     <h2>➕ Somatório de 1 a N</h2>
     <p>Informe um número inteiro positivo para calcular o somatório:</p>

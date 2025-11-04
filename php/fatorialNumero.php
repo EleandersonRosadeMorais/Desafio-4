@@ -41,6 +41,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+            <header>
+        <h1>Minhas Funções</h1>
+        <nav>
+            <ul>
+                <li><a class="item" href="../php/mesExtenso.php">Encontrar o maior valor</a></li>
+                <li><a class="item" href="../index.php">Home</a></li>
+                <li><a class="item" href="../php/somatorio1N.php">Calculadora de área e perímetro</a></li>
+            </ul>
+        </nav>
+    </header>
 <div class="container">
     <h2>🧮 Fatorial de um Número</h2>
     <p>Informe um número inteiro para calcular o fatorial:</p>

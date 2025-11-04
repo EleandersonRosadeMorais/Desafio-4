@@ -62,6 +62,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+                    <header>
+        <h1>Minhas Funções</h1>
+        <nav>
+            <ul>
+                <li><a class="item" href="../php/somatorio1N.php">Encontrar o maior valor</a></li>
+                <li><a class="item" href="../index.php">Home</a></li>
+                <li><a class="item" href="../php/medidaVariosValores.php">Calculadora de área e perímetro</a></li>
+            </ul>
+        </nav>
+    </header>
 <div class="container">
     <h2>🔢 Sequência de Pares</h2>
     <p>Informe o número inicial e o número final para listar os pares do intervalo:</p>

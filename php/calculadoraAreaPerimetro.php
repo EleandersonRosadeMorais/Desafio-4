@@ -63,6 +63,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 
 <body>
+
+<header>
+    <h1>Minhas Funções</h1>
+    <nav>
+        <ul>
+            <li><a class="item" href="../php/conversorMoedas.php">Encontrar o maior valor</a></li>
+            <li><a class="item" href="../index.php">Home</a></li>
+            <li><a class="item" href="../php/consumoCombustivel.php">Calculadora de área e perímetro</a></li>
+        </ul>
+    </nav>
+</header>
+
     <div class="container">
         <h2>📏 Calculadora de Área e Perímetro</h2>
         <p>Insira os valores da base e da altura do seu retângulo ou quadrado:</p>

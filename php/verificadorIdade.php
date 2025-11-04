@@ -46,6 +46,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+          <header>
+    <h1>Minhas Funções</h1>
+    <nav>
+        <ul>
+            <li><a class="item" href="../php/situacaoAluno.php">Encontrar o maior valor</a></li>
+            <li><a class="item" href="../index.php">Home</a></li>
+            <li><a class="item" href="../php/parImpar.php">Calculadora de área e perímetro</a></li>
+        </ul>
+    </nav>
+</header>   
 <div class="container">
     <h2>🗳️ Verificador de Idade e Votação</h2>
     <p>Informe o ano de nascimento da pessoa:</p>
