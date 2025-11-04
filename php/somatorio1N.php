@@ -45,9 +45,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h1>Minhas Funções</h1>
         <nav>
             <ul>
-                <li><a class="item" href="../php/fatorialNumero.php">Encontrar o maior valor</a></li>
+                <li><a class="item" href="../php/fatorialNumero.php">⬅️</a></li>
                 <li><a class="item" href="../index.php">Home</a></li>
-                <li><a class="item" href="../php/sequenciaPares.php">Calculadora de área e perímetro</a></li>
+                <li><a class="item" href="../php/sequenciaPares.php">➡️</a></li>
             </ul>
         </nav>
     </header>
